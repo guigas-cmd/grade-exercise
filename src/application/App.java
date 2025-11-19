@@ -12,15 +12,12 @@ public class App {
         System.out.print("Student Name: ");
         student.studentName = sc.nextLine();
 
-        double finalGrade = 0; // armazena os scanners digitados dentro do for
+        System.out.print("Enter the tree grades: ");
 
         for(int i=1; i<=3; i++){
-            System.out.print("Enter the tree grades: ");
             student.grade = sc.nextDouble();
-            finalGrade = finalGrade + student.grade;
-
+            student.finalGrade += student.grade;
         }
-
 
 
         sc.close();
