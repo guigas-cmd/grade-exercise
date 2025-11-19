@@ -19,6 +19,19 @@ public class App {
             student.finalGrade += student.grade;
         }
 
+        if(student.finalGrade < 60){
+            System.out.printf("FINAL GRADE = %.2f \n", student.finalGrade);
+            System.out.println("FAILED");
+            student.finalGrade = 60 - student.finalGrade;
+            System.out.printf("MISSING %.2f POINTS", student.finalGrade);
+
+        }
+        else{
+        System.out.printf("FINAL GRADE = %.2f \n ", student.finalGrade);
+        System.out.println("PASS");
+
+        }
+
 
         sc.close();
     }
